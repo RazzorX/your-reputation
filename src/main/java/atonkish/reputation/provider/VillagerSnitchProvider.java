@@ -31,7 +31,7 @@ public enum VillagerSnitchProvider implements IEntityComponentProvider, IServerD
 
     INSTANCE;
 
-    public static final Identifier VILLAGER_SNITCH_IDENTIFIER = new Identifier(ReputationMod.MOD_ID, "villager_snitch");
+    public static final Identifier VILLAGER_SNITCH_IDENTIFIER = Identifier.of(ReputationMod.MOD_ID, "villager_snitch");
     public static final String IS_SNITCH_KEY = "ReputationModIsSnitch";
 
     @Override

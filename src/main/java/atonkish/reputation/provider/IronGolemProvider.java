@@ -29,7 +29,7 @@ public enum IronGolemProvider implements IEntityComponentProvider, IServerDataPr
 
     INSTANCE;
 
-    public static final Identifier IRON_GOLEM_IDENTIFIER = new Identifier(ReputationMod.MOD_ID, "iron_golem");
+    public static final Identifier IRON_GOLEM_IDENTIFIER = Identifier.of(ReputationMod.MOD_ID, "iron_golem");
     public static final String ANGRY_AT_KEY = "ReputationModAngryAt";
 
     @Override
