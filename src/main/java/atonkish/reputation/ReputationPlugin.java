@@ -8,7 +8,7 @@ import snownee.jade.api.EntityAccessor;
 import snownee.jade.api.IWailaClientRegistration;
 import snownee.jade.api.IWailaCommonRegistration;
 import snownee.jade.api.IWailaPlugin;
-import snownee.jade.api.Identifiers;
+import snownee.jade.api.JadeIds;
 
 import atonkish.reputation.provider.IronGolemProvider;
 import atonkish.reputation.provider.VillagerReputationProvider;
@@ -32,7 +32,7 @@ public class ReputationPlugin implements IWailaPlugin {
             if (accessor instanceof EntityAccessor entityAccessor) {
                 Entity entity = entityAccessor.getEntity();
                 if (entity instanceof VillagerEntity) {
-                    rootElement.getTooltip().remove(Identifiers.CORE_OBJECT_NAME);
+                    rootElement.getTooltip().remove(JadeIds.CORE_OBJECT_NAME);
                 }
             }
         });
