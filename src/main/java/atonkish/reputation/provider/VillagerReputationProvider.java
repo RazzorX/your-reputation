@@ -28,7 +28,7 @@ public enum VillagerReputationProvider implements IEntityComponentProvider, ISer
 
     INSTANCE;
 
-    public static final Identifier VILLAGER_REPUTATION_IDENTIFIER = new Identifier(ReputationMod.MOD_ID,
+    public static final Identifier VILLAGER_REPUTATION_IDENTIFIER = Identifier.of(ReputationMod.MOD_ID,
             "villager_reputation");
     public static final String REPUTATION_KEY = "ReputationModReputation";
 
